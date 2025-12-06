@@ -1,3 +1,16 @@
-const add=()=>{console.log("hello")}   
+/*const add=()=>{console.log("hello")}   
 add()
 console.log("back") 
+*/
+function add(show){
+istrue=true
+if(istrue)
+{
+ show()//display
+}
+}
+console.log("welcome")
+add(display)
+function display(){
+console.log("it's good")
+}
