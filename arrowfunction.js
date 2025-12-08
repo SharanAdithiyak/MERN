@@ -2,6 +2,9 @@
 add()
 console.log("back") 
 */
+
+
+//call back basics
 function add(show){
 istrue=true
 if(istrue)
@@ -14,3 +17,4 @@ add(display)
 function display(){
 console.log("it's good")
 }
+
