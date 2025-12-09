@@ -7,7 +7,7 @@ function info(e){
 }
     return(      
         <>
-        <h1>im from disp6 my name is  </h1>
+        <h1>im from disp6 my is name is  </h1>
       
         <form onSubmit={info}>
         <input type="text" value={name} onChange={(e)=>setName(e.target.value)}></input>
