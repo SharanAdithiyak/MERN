@@ -8,15 +8,15 @@ const studnetSchema=new mongoose.Schema({
 });
 
 
-studnetSchema.pre('save',async function(){
-    if(this.isNew){
-        const counter=await Counter.findByIdAndUpdate(
-            {id:'rollno'},
-            {$inc:{seq:1}},
-            {new:true,upsert:true}
-        );
-        this.rollno=counter.seq;
-    }
-});
+// studnetSchema.pre('save',async function(){
+//     if(this.isNew){
+//         const counter=await Counter.findByIdAndUpdate(
+//             {id:'rollno'},
+//             {$inc:{seq:1}},
+//             {new:true,upsert:true}
+//         );
+//         this.rollno=counter.seq;
+//     }
+// });
 
 module.exports=mongoose.model('Student',studnetSchema);
